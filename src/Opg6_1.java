@@ -7,9 +7,9 @@ public class Opg6_1 {
     // with 10 numbers on each line.
 
 
-
     public static void main(String[] args) {
 
+        //her køres der et loop der udskriver linjer med 10 pentagonal numre for hver linje
         for (int i = 0; i <101 ; i++) {
 
             if (i%10 == 0)
@@ -17,10 +17,9 @@ public class Opg6_1 {
             else
                 System.out.print(getPentagonalNumber(i)+ " ");
         }
-
-
     }
 
+    //Dette er metoden der finder pentagonal numrene baseret på hvilket tal der modtages som parameter
     public static int getPentagonalNumber(int n){
 
         int pentagonal = n*(3 * n -1)/2;
